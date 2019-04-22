@@ -3,15 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "express": "^4.16.4",
+    "jquery": "^3.4.0",
+    "lodash": "^4.17.11",
+    "popper.js": "^1.15.0",
+    "promise-polyfill": "8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-paginate": "^6.3.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-tooltip-lite": "^1.9.1",
+    "typescript": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server-test": "npx mocha server/**/*.js",
+    "server-start": "node server/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +36,25 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.0",
+    "@types/classnames": "^2.2.7",
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^11.13.5",
+    "@types/promise-polyfill": "^6.0.3",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-paginate": "^6.2.1",
+    "@types/react-router-dom": "^4.3.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "mocha": "^6.1.4",
+    "node-sass": "^4.11.0"
+  }
 }

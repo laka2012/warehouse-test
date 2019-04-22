@@ -1,0 +1,14 @@
+.shoppingcartdetails {
+    display: inline-block;
+    margin-left: 10px;
+    .image {
+        float: left;
+    }
+    .name {
+        float: left;
+    }
+    .price {
+        margin-left: 10px;
+        float: left;
+    }
+}

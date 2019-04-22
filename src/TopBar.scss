@@ -1,0 +1,52 @@
+.topbar {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0px;
+    background: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .title {
+        font-size: large;
+        float: left;
+        margin-left: 20px;
+    }
+    .right-container {
+        float: right;
+        margin-right: 30px;
+        .search-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .search {
+            margin-right: 10px;
+            position: relative;
+            display: inline-block;
+            .search-input {
+                margin-left:10px;
+                padding-right: 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .input-clear {
+                position: absolute;
+                right:0; top:0;
+                font-style: normal;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+            input::-ms-clear {  /* Remove IE default X */
+                display: none;
+            }
+        }
+        .cart {
+            text-decoration: underline;
+            cursor: pointer;
+            float: right;
+            margin-left: 20px;
+            .cart-number {
+                margin-left: 10px;
+            }
+        }
+    }
+}

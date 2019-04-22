@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowItem smoke test 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ShowItem
+    addToCart={[Function]}
+    item={
+      Object {
+        "add_to_cart": true,
+        "brand": "test",
+        "categories": "test",
+        "date_added": "test",
+        "flybuys_points": 1005,
+        "group_id": "test",
+        "image_url": "test",
+        "in_stock": true,
+        "model": "test",
+        "name": "test",
+        "on_special": true,
+        "price": 100,
+        "shipping_class": "test",
+        "sku": "test",
+        "sold_out": false,
+        "type": "test",
+        "url": "test",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="name"
+        >
+          test
+        </div>,
+        <div
+          className="image"
+        >
+          <img
+            src="test"
+          />
+        </div>,
+        <div
+          className="bottom"
+        >
+          <div
+            className="price"
+          >
+            $
+            100
+          </div>
+          <button
+            className="add-cart"
+            onClick={[Function]}
+          >
+            Add
+          </button>
+        </div>,
+      ],
+      "className": "showitem",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "test",
+          "className": "name",
+        },
+        "ref": null,
+        "rendered": "test",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            src="test"
+          />,
+          "className": "image",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "src": "test",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="price"
+            >
+              $
+              100
+            </div>,
+            <button
+              className="add-cart"
+              onClick={[Function]}
+            >
+              Add
+            </button>,
+          ],
+          "className": "bottom",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "$",
+                100,
+              ],
+              "className": "price",
+            },
+            "ref": null,
+            "rendered": Array [
+              "$",
+              100,
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add",
+              "className": "add-cart",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Add",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="name"
+          >
+            test
+          </div>,
+          <div
+            className="image"
+          >
+            <img
+              src="test"
+            />
+          </div>,
+          <div
+            className="bottom"
+          >
+            <div
+              className="price"
+            >
+              $
+              100
+            </div>
+            <button
+              className="add-cart"
+              onClick={[Function]}
+            >
+              Add
+            </button>
+          </div>,
+        ],
+        "className": "showitem",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "test",
+            "className": "name",
+          },
+          "ref": null,
+          "rendered": "test",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              src="test"
+            />,
+            "className": "image",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "src": "test",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="price"
+              >
+                $
+                100
+              </div>,
+              <button
+                className="add-cart"
+                onClick={[Function]}
+              >
+                Add
+              </button>,
+            ],
+            "className": "bottom",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "$",
+                  100,
+                ],
+                "className": "price",
+              },
+              "ref": null,
+              "rendered": Array [
+                "$",
+                100,
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add",
+                "className": "add-cart",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Add",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

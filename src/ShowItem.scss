@@ -1,0 +1,33 @@
+.showitem{
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #b4bac4;
+    .name {
+        border-bottom: 1px solid #b4bac4;
+        padding-bottom: 5px;
+        text-align: center;
+        width: 300px;
+    }
+    .image {
+        margin: 10px 0px;
+        img {
+            width: 300px;
+        }
+    }
+    .bottom {
+        border-top: 1px solid #b4bac4;
+        padding: 5px;
+        .price {
+            float: left;
+            margin-left: 20px;
+        }
+        .add-cart {
+            float: right;
+            margin-right: 20px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 0 20px #a4c2f2; 
+    }
+}

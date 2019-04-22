@@ -1,0 +1,41 @@
+.shoppingCartContent {
+    margin: 80px 60px 20px 60px;
+    .delete-btn {
+        float: left;
+    }
+    .add-delet-btns {
+        float: right;
+        .add {
+            width:30px;
+            margin-right:5px;
+        }
+        .delete {
+            width:30px;
+            margin-left:5px;
+        }
+    }
+    .shoppingcartdetailsrow {
+        padding: 20px;
+        border: 1px solid;
+        margin: 10px 0px;
+    }
+    .total-price {
+        font-weight: bold;
+        text-align: right;
+    }
+    .action {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .shoppingCartContent {
+        .shoppingcartdetailsrow {
+            display: inline-block;
+        }
+        .add-delet-btns {
+            float: left;
+        }
+    }
+}
