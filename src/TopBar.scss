@@ -16,7 +16,6 @@
         margin-right: 30px;
         .search-icon {
             display: inline-block;
-            vertical-align: middle;
         }
         .search {
             margin-right: 10px;
@@ -40,6 +39,7 @@
             }
         }
         .cart {
+            margin-top: 2px;
             text-decoration: underline;
             cursor: pointer;
             float: right;
@@ -47,6 +47,14 @@
             .cart-number {
                 margin-left: 10px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topbar {
+        .right-container {
+            margin-right: 0px;
         }
     }
 }

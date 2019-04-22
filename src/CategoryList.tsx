@@ -11,6 +11,11 @@ export interface Props {
 }
 
 class CategoryList extends Component<Props> {
+    constructor(props: any) {
+        super(props);
+        this.handleSelectedIdClick = this.handleSelectedIdClick.bind(this);
+    }
+
     handleSelectedIdClick(id: string, cate: string) {
         this.props.handleSelectedIdClick(id, cate);
     }
@@ -18,7 +23,7 @@ class CategoryList extends Component<Props> {
     render() {
         return (
             <div className='category-list'>
-                <p>Categories</p>
+                <p className='category-title'>Categories</p>
                 <div className={classNames({
                         item: true,
                         isSelect: this.props.selectedId == 'emptyId'

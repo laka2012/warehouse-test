@@ -33,6 +33,7 @@ ShallowWrapper {
           items={Array []}
           pageCount={0}
           searchText=""
+          selectPage={0}
           selectedId=""
         />,
       ],
@@ -66,6 +67,7 @@ ShallowWrapper {
           "items": Array [],
           "pageCount": 0,
           "searchText": "",
+          "selectPage": 0,
           "selectedId": "",
         },
         "ref": null,
@@ -96,6 +98,7 @@ ShallowWrapper {
             items={Array []}
             pageCount={0}
             searchText=""
+            selectPage={0}
             selectedId=""
           />,
         ],
@@ -129,6 +132,7 @@ ShallowWrapper {
             "items": Array [],
             "pageCount": 0,
             "searchText": "",
+            "selectPage": 0,
             "selectedId": "",
           },
           "ref": null,

@@ -9,13 +9,22 @@ It is a simple shopping cart one single page app, there are client and server 2 
 client side: all user interface (npm start -- eg:localhost:3000)
 server side: support api request (npm run server-start -- eg:http://localhost:4000/products?searchText=hp)
 
-For demo, local json data file (not all data) is used, and cached in client, all filter and search logic are implemented from cached data, but it is easy to change to use server api request.
+For demo, local json data file (not all data) is used, and cached in client, all filter and search logic are implemented from cached data, but it is easy to change to use server api request too. The reason I use local cached data is that I can get categories for left category navigation list items quickly (get all unique category from smaller dummy data file), too big categories data in original dummy data file, and also it is easy to deploy it in demo server.
 
 Demo url: https://zen-dubinsky-aad59a.netlify.com/
+
+## App test
+
+client test: npm test (Not all implemented but do most examples by enzyme/jest)
+server test: npm run server-test (One route intergrated api test by mocha/chai)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install app
 
 ### `npm start`
 

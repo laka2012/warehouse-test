@@ -40,15 +40,19 @@ class App extends Component<any, State> {
 		this.handleSearchClear = this.handleSearchClear.bind(this);
 	}
 
+	private getPageCount(itemLength: number): number {
+		return Math.ceil(itemLength / PAGE_LIMIT);
+	}
+
 	handlePageClick(data: any) {
 		this.setState({selectPage: data.selected});
 	}
 
 	handleSelectedIdClick(id: string, category: string) {
 		const filteredItems = this.state.items.filter((item:Item) => item.categories == category || category == '');
-		this.setState({searchText: '', selectedId: id, filteredItems});
+		this.setState({searchText: '', selectedId: id, selectPage: 0, filteredItems});
 		this.setState((state: State) => ({
-			pageCount: Math.ceil(state.filteredItems.length / PAGE_LIMIT)
+			pageCount: this.getPageCount(state.filteredItems.length)
 		}));
 	}
 
@@ -56,15 +60,20 @@ class App extends Component<any, State> {
 		const filteredItems = this.state.items.filter((item:Item) => 
 			item.name.match(new RegExp(e.target.value, "i")) || item.brand.match(new RegExp(e.target.value, "i"))
 		);
-		this.setState({searchText: e.target.value, selectedId: '', filteredItems});
+		this.setState({searchText: e.target.value, selectedId: '', selectPage: 0, filteredItems});
 		this.setState((state: State) => ({
-			pageCount: Math.ceil(state.filteredItems.length / PAGE_LIMIT)
+			pageCount: this.getPageCount(state.filteredItems.length)
 		}));
 	}
 
 	handleSearchClear() {
 		const filteredItems = this.state.items;
-		this.setState({searchText: '', pageCount: filteredItems.length  / PAGE_LIMIT ,filteredItems});
+		this.setState({
+			searchText: '', 
+			pageCount: this.getPageCount(filteredItems.length),
+			selectPage: 0,
+			filteredItems
+		});
 	}
 
 	addToCart(item: Item) {
@@ -98,7 +107,7 @@ class App extends Component<any, State> {
 		/**
 		 * This is simulated loading, load some data to client once
 		 * 
-		 * for server.js 
+		 * for server.js request
 		 * /products?page={1,2...n} for paging number
 		 * &limit=12 for items per page
 		 * &searchText=example for text filter
@@ -108,7 +117,7 @@ class App extends Component<any, State> {
 			.then(response => this.setState({ 
 				items: response.data,
 				filteredItems: response.data,
-				pageCount: Math.ceil(response.data.length / PAGE_LIMIT) 
+				pageCount:  this.getPageCount(response.data.length) 
 			}))
 			.catch(error => {
 				console.log(error);
@@ -154,6 +163,7 @@ class App extends Component<any, State> {
 					handleSelectedIdClick={this.handleSelectedIdClick}
 					addToCart={this.addToCart}
 					searchText={this.state.searchText}
+					selectPage={this.state.selectPage}
 				/>
 			</div>
 		);

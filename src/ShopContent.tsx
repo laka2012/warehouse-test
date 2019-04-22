@@ -13,6 +13,7 @@ export interface Props {
 	handleSelectedIdClick: (id: string, category: string) => void;
 	addToCart: (item: Item) => void;
 	searchText: string;
+	selectPage: number;
 }
 
 class ShopContent extends Component<Props> {
@@ -30,6 +31,7 @@ class ShopContent extends Component<Props> {
 					handlePageClick={this.props.handlePageClick} 
 					addToCart={this.props.addToCart}
 					searchText={this.props.searchText}
+					selectPage={this.props.selectPage}
 				/>
 			</div>
 		);

@@ -67,7 +67,7 @@ ShallowWrapper {
             className="add-cart"
             onClick={[Function]}
           >
-            Add
+            Add To Cart
           </button>
         </div>,
       ],
@@ -127,7 +127,7 @@ ShallowWrapper {
               className="add-cart"
               onClick={[Function]}
             >
-              Add
+              Add To Cart
             </button>,
           ],
           "className": "bottom",
@@ -157,12 +157,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Add",
+              "children": "Add To Cart",
               "className": "add-cart",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "Add",
+            "rendered": "Add To Cart",
             "type": "button",
           },
         ],
@@ -203,7 +203,7 @@ ShallowWrapper {
               className="add-cart"
               onClick={[Function]}
             >
-              Add
+              Add To Cart
             </button>
           </div>,
         ],
@@ -263,7 +263,7 @@ ShallowWrapper {
                 className="add-cart"
                 onClick={[Function]}
               >
-                Add
+                Add To Cart
               </button>,
             ],
             "className": "bottom",
@@ -293,12 +293,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Add",
+                "children": "Add To Cart",
                 "className": "add-cart",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "Add",
+              "rendered": "Add To Cart",
               "type": "button",
             },
           ],

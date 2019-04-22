@@ -10,6 +10,7 @@ export interface Props {
     handlePageClick: (data:any) => void;
     addToCart: (item: Item) => void;
     searchText: string;
+    selectPage: number;
 }
 
 class ShowList extends Component<Props> {
@@ -45,6 +46,7 @@ class ShowList extends Component<Props> {
                         onPageChange={this.onPageChange}
                         containerClassName={'pagination'}
                         activeClassName={'active'}
+                        forcePage={this.props.selectPage}
                     />
                 </div>
             </div>

@@ -1,9 +1,14 @@
 .category-list {
     float: left;
-    padding: 10px;
+    padding: 0px 10px;
     margin-right: 10px;
     height: 600px;
     overflow-y: scroll;
+    .category-title {
+        padding: 3px;
+        font-weight: bold;
+        background-color: #e6e6ff;
+    }
     .item {
         width: 200px;
         white-space: nowrap;
